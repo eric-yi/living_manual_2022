@@ -1,0 +1,443 @@
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+.list {
+  font-family:sans-serif;
+}
+td {
+  padding:10px;
+  border:solid 1px #eee;
+  background-color: #eee;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 15px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+}
+
+.ExcelTable2003 {
+    border: 1px solid #404040;
+    border-width: 1px 0px 0px 1px;
+    font-size: 10pt;
+    font-family: arial;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.ExcelTable2003 TH {
+    background-color: #D4D0C8;
+    border: 1px solid #808080;
+    border-width: 0px 1px 1px 0px;
+    font-weight: normal;
+}
+
+.ExcelTable2003 TD {
+    border: 0px;
+    background-color: white;
+    padding: 0px 4px 0px 2px;
+    border: 1px solid #C0C0C0;
+    border-width: 0px 1px 1px 0px;
+}
+
+.ExcelTable2003 TD.heading {
+    background-color: #D4D0C8;
+    border: 1px solid #808080;
+    border-width: 0px 1px 1px 0px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.ExcelTable2007 {
+    border: 1px solid #B0CBEF;
+    border-width: 1px 0px 0px 1px;
+    font-size: 11pt;
+    font-family: Calibri;
+    font-weight: 100;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.ExcelTable2007 TH {
+    background-image: url(excel-2007-header-bg.gif);
+    background-repeat: repeat-x;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid #9EB6CE;
+    border-width: 0px 1px 1px 0px;
+    height: 17px;
+}
+
+.ExcelTable2007 TD {
+    border: 0px;
+    background-color: white;
+    padding: 0px 4px 0px 2px;
+    border: 1px solid #D0D7E5;
+    border-width: 0px 1px 1px 0px;
+}
+
+.ExcelTable2007 TD B {
+    border: 0px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.ExcelTable2007 TD.heading {
+    background-color: #E4ECF7;
+    text-align: center;
+    border: 1px solid #9EB6CE;
+    border-width: 0px 1px 1px 0px;
+}
+
+.ExcelTable2007 TH.heading {
+    background-image: url(excel-2007-header-left.gif);
+    background-repeat: none;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline-offset: 3px;
+  }
+
+  *:focus {
+    outline: 3px solid #000000;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 25px;
+    }
+  }
+
+  section:nth-child(2n) {
+    background: #edf7f5;
+  }
+
+  .panels section {
+    background: #d6e8e5;
+    min-height: 100%;
+  }
+
+  .panels section:nth-child(2) {
+    min-height: calc(100% + 200px);
+  }
+
+  .panels section:nth-child(2n) {
+    background: #c2d6d2;
+  }
+
+  .panels.horizontal {
+    display: flex;
+  }
+
+  .panels.horizontal section {
+    min-height: 0;
+    min-width: 100%;
+  }
+
+  .panels.horizontal section:nth-child(2) {
+    min-width: calc(100% + 200px);
+  }
+
+  section .explanation,
+  section pre {
+    background: #edf7f5;
+  }
+
+  section:nth-child(2n) .explanation,
+  section:nth-child(2n) pre {
+    background: #ffffff;
+  }
+
+  section.introduction {
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.introduction .center {
+    text-align: center;
+  }
+
+  section.introduction .center p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+  }
+
+  section.introduction .center p a {
+    word-break: break-all;
+  }
+
+  section.introduction .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+
+    text-align: center;
+    font-size: 60%;
+  }
+
+  section.introduction .bottom:after {
+    display: block;
+    margin: 1em auto 0;
+    height: 20px;
+    width: 20px;
+
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    content: '';
+
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  section.options,
+  section.options_explained {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 300%;
+    margin: 0 0 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 100%;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .group {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -25px;
+  }
+
+  .group > * {
+    margin: 25px;
+  }
+
+  .panels,
+  pre {
+    flex-grow: 99999;
+    flex-basis: 300px;
+  }
+
+  .panels {
+    overflow: auto;
+  }
+
+  .explanation,
+  pre {
+    margin: 0;
+    overflow-x: auto;
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .explanation,
+    pre {
+      padding: 25px;
+    }
+  }
+
+  .explanation dt,
+  pre {
+    font-size: 80%;
+    font-family: Ubunutu Mono, monospace;
+  }
+
+  .explanation {
+    flex-grow: 1;
+  }
+
+  .explanation dt:after {
+    content: ':';
+  }
+
+  .explanation dd {
+    margin: 0 0 0 10px;
+  }
+
+  .explanation dd + dt {
+    margin: 25px 0 0;
+  }
+
+  .aside {
+    flex-grow: 1;
+    flex-basis: 300px;
+  }
+
+  .aside > *:first-child {
+    margin-top: 0;
+  }
+
+  .aside > *:last-child {
+    margin-bottom: 0;
+  }
+
+section:nth-child(2) {
+  min-height: calc(100vh + 200px);
+}
+.menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+.menu li+li button {
+  margin-left: 10px;
+}
+
+.navbutton {
+  background: white;
+  font: inherit;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.navbutton.active {
+  background: black;
+  color: white;
+}
+
+.controls {
+position: fixed;
+right: 1rem;
+margin-top: 16px;
+border: 1px solid transparent;
+border-radius: 2px 0 0 2px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+height: 32px;
+outline: none;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+background-color: #fff;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+margin-left: 12px;
+padding: 0 11px 0 13px;
+text-overflow: ellipsis;
+width: 400px;
+}
+
+#pac-input:focus {
+border-color: #4d90fe;
+}
+
+.pac-container {
+font-family: Roboto;
+}
+
+#type-selector {
+color: #fff;
+background-color: #4d90fe;
+padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+font-family: Roboto;
+font-size: 13px;
+font-weight: 300;
+}

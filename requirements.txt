@@ -1,0 +1,11 @@
+Scrapy>=1.5.1 # pyup: < 2.0  # https://github.com/scrapy/scrapy
+selenium>=3.14.0 # pyup: < 4.0  # https://github.com/SeleniumHQ/selenium
+typing_extensions
+pysqlite3
+alembic
+numpy
+csv
+pandas
+screeninfo
+beautifulsoup4
+htmlmin
